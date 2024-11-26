@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olympics</title>
+    <style>
+        body {
+            background-color: bisque;
+            margin: 0;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+
+        header {
+            padding: 1px;
+            background: #0a7e67;
+            color: white;
+            font-size: 18px;
+            text-align: left;
+            margin: -8px;
+        }
+
+        .headtext {
+            margin-left: 50px;
+        }
+
+        .marquee {
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            animation: marquee 10s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .parisolympics {
+            display: inline-block;
+            padding-top: 2.2rem;
+            font-size: 4rem;    
+            animation: colorRotate 6s linear infinite;
+        }
+
+        @keyframes colorRotate {
+            from { color: #6666ff; }
+            10% { color: #0099ff; }
+            50% { color: #00ff00; }
+            75% { color: #ff3399; }
+            100% { color: #6666ff; }
+        }
+
+        footer {
+            padding: 2px;
+            background: #0a7e67;
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            margin-top: 78px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="headtext">
+            <h1>Olympic 2024</h1>
+        </div>
+    </header>
+
+    <div class="marquee">
+        <div class="parisolympics">
+            Welcome to the <br>Paris Olympics 2024.
+        </div>
+    </div>
+
+    <footer>
+        <p>Contact</p>
+        <p>About Us</p>
+    </footer>
+</body>
+</html>
